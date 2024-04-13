@@ -2,10 +2,9 @@ package faker
 
 import (
 	"fmt"
+	"gopherql/uuid"
 	"math/rand"
 	"time"
-
-	"github.com/shohinsan/gopherql/uuid"
 )
 
 func init() {

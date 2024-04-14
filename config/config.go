@@ -1,6 +1,7 @@
 package config
 
 import (
+	"fmt"
 	"os"
 	"regexp"
 
@@ -25,6 +26,8 @@ func LoadEnv(fileName string) {
 	re := regexp.MustCompile(`^(.*` + "GopherQL" + `)`)
 	cwd, _ := os.Getwd()
 	rootPath := re.Find([]byte(cwd))
+
+	fmt.Println("this is rootPath", string(rootPath)+`/`+fileName)
 
 	err := godotenv.Load(string(rootPath) + `/` + fileName)
 	if err != nil {

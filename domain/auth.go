@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"gopherql"
 
+	gopherql "github.com/shohinsan/GopherQL"
 	"golang.org/x/crypto/bcrypt"
 )
 

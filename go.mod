@@ -1,9 +1,8 @@
-module gopherql
+module github.com/shohinsan/GopherQL
 
 go 1.22.2
 
 require (
-	github.com/docker/distribution v2.8.2+incompatible
 	github.com/golang-migrate/migrate/v4 v4.17.0
 	github.com/google/uuid v1.4.0
 	github.com/jackc/pgx/v5 v5.3.1

@@ -40,8 +40,8 @@ Default resolvers are Query and Mutation, and if you have anything extra, then a
 
 
 `register`
-```
 
+```
 mutation{
   register(
     input: {
@@ -63,6 +63,8 @@ mutation{
 ```
 
 `login`
+
+```
 mutation{
   login(
     input: {

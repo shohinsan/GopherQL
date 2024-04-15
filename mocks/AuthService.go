@@ -4,8 +4,8 @@ package mocks
 
 import (
 	context "context"
-	gopherql "github.com/shohinsan/GopherQL"
 
+	gopherql "github.com/shohinsan/GopherQL"
 	mock "github.com/stretchr/testify/mock"
 )
 

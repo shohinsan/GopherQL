@@ -20,9 +20,9 @@ drop:
 migration:
 	migrate create -dir postgres/migrations create_users_table
 
-
 run:
+	lsof -i :8080 | awk 'NR!=1 {print $$2}' | xargs -r kill -9
 	go run cmd/graphqlserver/*.go
 
 generate: 
-	go generate ./..
+	go generate ./...
